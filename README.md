@@ -9,6 +9,11 @@ This is an AI-powered sonar classification model that predicts whether an object
 -**Backend**: Flask (Python)
 -**Machine Learning**: Scikit-learn
 -**Deployment**: Localhost (Flask)
+- **Languages:** C, C++, Python, Java  
+- **Frontend:** HTML, CSS, JavaScript, React  
+- **Backend:** Node.js  
+- **Databases:** MongoDB  
+- **AI & ML:** Python-based AI models  
 
 ### 📂 Project Structure
 -**model/** → Contains the trained ML model (sonar_model.pkl)
