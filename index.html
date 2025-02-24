@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock vs Mine Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='sonar_logo.png') }}" alt="Sonar Logo" class="logo">
+            <h1>Rock vs Mine Sonar Prediction</h1>
+        </header>
+        
+        <div class="form-container">
+            <h2>Enter 60 feature values:</h2>
+            <form action="/predict" method="post">
+                <textarea name="features" required placeholder="Enter values separated by commas"></textarea>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+
+        {% if prediction_text %}
+        <div class="result-box">
+            <p class="result">{{ prediction_text }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
