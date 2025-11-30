@@ -44,7 +44,7 @@ An advanced machine learning application that uses sonar signals to distinguish 
 #### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/The-ChandanKV/Rock-vs-Mine-prediction-ML-model.git
 cd "Rock vs Mine prediction model"
 ```
 
